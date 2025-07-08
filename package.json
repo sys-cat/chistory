@@ -2,7 +2,10 @@
   "name": "chistory",
   "version": "1.0.0",
   "description": "Claude history viewer CLI tool",
+  "auther": "sys-cat",
+  "license":"MIT",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "chistory": "dist/index.js"
   },
@@ -16,8 +19,10 @@
     "history",
     "cli"
   ],
-  "author": "",
-  "license": "MIT",
+  "homepage": "https://github.com/sys-cat/chistory#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "dependencies": {
     "chalk": "^5.0.0",
     "commander": "^11.0.0",
