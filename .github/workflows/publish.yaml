@@ -15,8 +15,9 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org
-          scope: @jason-m-hicks
-          publish-token: ${{ secrets.NPM_TOKEN }}
+          scope: '@sys-cat'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: install npm package
         run: npm install
